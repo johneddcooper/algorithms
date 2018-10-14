@@ -74,6 +74,10 @@ class _SortedHeap(_Heap):
         #     _max_heapify(self, 0)
 
 
+def heap_sort_low(array):
+    return heap_sort(array).reverse()
+
+
 def heap_sort(array):
     heap = _SortedHeap(array)
     #_build_max_heap(heap)
